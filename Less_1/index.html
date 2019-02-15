@@ -1,0 +1,58 @@
+<!-- если все в первый раз.. то можно писать не на pug+scss а на html+css, но лучше привыкать к хорошему сразу
+
+1 уровень сложности создать несколько дивов с разными классами и прописать им различные стили, так чтобы описать ту или иную тему.
+важно не просто скопировать код из статьи а именно понять что и почему.. и закрепить это на практике - я буду спрашивать выборочно
+
+2. уровень сложности - родителям и потомкам давать классы по методологии БЭМ, например .block -> .block__child -> .block_child--red,
+стили писать в scss а код в pug
+
+3. уровень сложности - кому будет совсем скучно - сделать их активными, например по фокусу меняется z-index или другие стили и и они
+плавно меняются местами (что касается позиционирования)
+
+в общем приветствуется творческий подход и главное понимание материала
+
+ссылки на ваши работы присылайте мне лично.. чтобы не было плагиата -->
+
+
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Jane_Starlight | Задание 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class = "header">
+    <section class = "header__section">
+
+        <div class="header__section-fio">
+            <p> Кувшинова Евгения Андреевна </p>
+        </div>
+
+        <div class = "header__section-img">
+            <img src = "src\img\img1.jpg" alt = "panda" width="500">
+        </div>
+    </section>
+    <nav class = "header__section-menu" id ="menu">
+        <a href = "#" class = "header__section-item">FIO</a>
+        <a href="#" class = "header__section-item">First</a>
+        <a href = "#" class = "header__section-item">Second</a>
+        <a href = "#" class = "header__section-item">Third</a>
+        <a href = "#" class = "header__section-item">Fifth </a>
+    </nav>
+</header>
+</body>
+
+<footer class = "footer">
+    <div class = "footer__div">
+        <div class = "footer__div-text">
+            <p> Ссылка на github</p>
+        </div>
+        <div class = "footer__div-github">
+            <a href= "https://github.com/Jnuka/Course_DL" class = "header__section-item"> <img src = "src\img\img2.png" alt = "github"> </a>
+        </div>
+    </div>
+</footer>
+
+</html>
